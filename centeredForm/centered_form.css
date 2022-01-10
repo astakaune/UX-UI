@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(20, 30, 48), rgba(35, 58, 84, 0.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+form {
+    height: 370px;
+    width: 430px;
+    padding: 50px 40px;
+    background-color: rgb(12, 18, 28);
+    border-radius: 8px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+form>h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form .material-input:first-of-type {
+    margin-bottom: 40px;
+}
+
+form .material-input:last-of-type {
+    margin-bottom: 70px;
+}
+
+form .material-input>input {
+    border-color: white;
+    color: white;
+}
+
+form .material-input>input:placeholder-shown+label, label {
+    color: white;
+}
+
+form input[type=submit] {
+    font-size: 15px;
+    width: 40%;
+    color: rgb(3, 233, 244);
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+form input[type=submit]:hover {
+    color: white;
+    background-color: rgb(3, 233, 244);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+    form {
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,205 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', 'Sans-serif';
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #f2f2f2;
+}
+
+.container-wrapper {
+    width: 1120px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.company-details {
+    background-image: url('https://colorlib.com/etc/cf/ContactFrom_v17/images/bg-01.jpg');
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 30px 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-details-row {
+    width: 60%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 47px;
+}
+
+.company-details-row .row-icon {
+    padding-right: 25px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.company-details-row .row-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-details>.title {
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.row-details>.subtitle {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.row-details>.subtitle-green {
+    color: #00ad5f;
+}
+
+.picture-background {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    background-attachment: fixed;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 56px 55px 63px;
+    background-color: #ffffff;
+}
+
+form .form-title {
+    width: 100%;
+    font-size: 30px;
+    color: #333333;
+    line-height: 1.2;
+    padding-bottom: 33px;
+    text-align: center;
+}
+
+form .input-label {
+    width: 100%;
+    min-height: 55px;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    padding: 10px 25px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+form .input-base {
+    height: 55px;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0 25px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+}
+
+form .input-base:focus {
+    border: 1px solid #00ad5f;
+}
+
+form .input-50-width {
+    width: 50%;
+}
+
+form .input-100-width {
+    width: 100%;
+}
+
+form .textarea-base {
+    min-height: 139px;
+    padding-top: 19px;
+    padding-bottom: 15px;
+}
+
+form .input-base::placeholder {
+    color: #adadad;
+}
+
+form .submit-wrap {
+    width: 100%;
+    padding-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+form .submit-wrap input[type="submit"] {
+    border: none;
+    padding: 0 20px;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #00ad5f;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .submit-wrap input[type="submit"]:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%;
+    }
+
+    .company-details {
+        width: 100%;
+    }
+}

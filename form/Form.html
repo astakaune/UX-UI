@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Form.css">
+    <title>Form</title>
+   
+</head>
+
+
+<body>
+
+    <h3>Using CSS to style an HTML Form</h3>
+    <div>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Your first name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected hidden>Choose Country</option>
+                <option value="australia">Australia</option>
+                <option value="lithuania">Lithuania</option>
+                <option value="latvia">Latvia</option>
+            </select>
+
+            <input type="submit" value="Pateikti">
+        </form>
+    </div>
+
+</body>
+
+</html>

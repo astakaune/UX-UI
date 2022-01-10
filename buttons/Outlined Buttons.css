@@ -1,0 +1,36 @@
+.outlined {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.outlined:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.outlined:disabled {
+    color: rgba(0, 0, 0, 0.26);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    cursor: default;
+    pointer-events: none;
+}
+
+.outlined-primary {
+    color: #1976d2;
+    border: 1px solid rgba(25, 118, 210, 0.5);
+}
+
+.outlined-primary:hover {
+    border: 1px solid #1976d2;
+    background-color: rgba(25, 118, 210, 0.04);
+}
+
+.outlined-secondary {
+    color: rgb(220, 0, 78);
+    border: 1px solid rgba(220, 0, 78, 0.5);
+}
+
+.outlined-secondary:hover {
+    border: 1px solid rgb(220, 0, 78);
+    background-color: rgba(220, 0, 78, 0.04);
+}

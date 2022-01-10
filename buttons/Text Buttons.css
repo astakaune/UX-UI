@@ -1,0 +1,27 @@
+.text {
+    border: none;
+    background-color: inherit;
+    padding: 6px 8px;
+    margin: 8px;
+}
+
+.text:disabled, .text[disabled] {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+}
+
+.text-primary {
+    color: #1976d2;
+}
+
+.text-primary:hover {
+    background-color: rgba(25, 118, 210, 0.04);
+}
+
+.text-secondary {
+    color: rgb(220, 0, 78);
+}
+
+.text-secondary:hover {
+    background-color: rgba(220, 0, 78, 0.04);
+}

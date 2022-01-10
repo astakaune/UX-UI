@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="actions">action field</div>
+        <div id="result"></div>
+
+        <!-- Row 1 -->
+        <div class="cell function"> % </div>
+        <div class="cell function"> CE </div>
+        <div class="cell function" onclick="erase()"> C </div>
+        <div class="cell function" onclick="eraseLastNumber()"> CLEAR </div>
+
+        <!-- Row 2 -->
+        <div class="cell function"> 1/x </div>
+        <div class="cell function"><i> x<sup>2</sup> </i></div>
+        <div class="cell function"> x </div>
+        <div class="cell function" onclick="actionPress('/')"> / </div>
+
+        <!-- Row 3 -->
+        <div class="cell number" onclick="numberPress(7)"> 7 </div>
+        <div class="cell number" onclick="numberPress(8)"> 8 </div>
+        <div class="cell number" onclick="numberPress(9)"> 9</div>
+        <div class="cell function" onclick="actionPress('x')"> X </div>
+
+        <!-- Row 4 -->
+        <div class="cell number" onclick="numberPress(4)">4 </div>
+        <div class="cell number" onclick="numberPress(5)">5 </div>
+        <div class="cell number" onclick="numberPress(6)">6 </div>
+        <div class="cell function" onclick="actionPress('-')"> - </div>
+
+        <!-- Row 5 -->
+        <div class="cell number" onclick="numberPress(1)">1 </div>
+        <div class="cell number" onclick="numberPress(2)">2 </div>
+        <div class="cell number" onclick="numberPress(3)">3 </div>
+        <div class="cell function" onclick="actionPress('+')">+ </div>
+
+        <!-- Row 6 -->
+        <div class="cell number"> <i> <sup> +</sup>/<sub>-</sub> </i> </div>
+        <div class="cell number" onclick="numberPress(0)">0 </div>
+        <div class="cell number" onclick="dotPress()">. </div>
+        <div class="cell equals" onclick="equals()">= </div>
+    </div>
+
+    
+    <script src="calculator.js"></script>
+</body>
+
+</html>

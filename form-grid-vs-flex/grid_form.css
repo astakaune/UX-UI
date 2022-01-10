@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    width: 600px;
+    margin-top: 20px;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+}
+
+label {
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+input {
+    grid-column: 2 / 3;
+}
+
+input:focus {
+    outline: 3px solid gold;
+}
+
+input[type="submit"] {
+    background: lightgrey;
+    padding: 0.7em;
+    border: 0;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: gold;
+}

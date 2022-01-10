@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive contact form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="Stylesheet" href="responsive_contact_form.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div class="container-wrapper">
+            <form>
+                <span class="form-title">Send Us A Message</span>
+
+                <label for="first_name" class="input-label">Tell us your name *</label>
+                <input id="first_name" type="text" placeholder="First name" required class="input-base input-50-width">
+                <input type="text" placeholder="Last name" required class="input-base input-50-width">
+
+                <label for="email" class="input-label">Enter your email *</label>
+                <input id="email" type="email" placeholder="Eg. example@email.com" required
+                    class="input-base input-100-width">
+
+                <label for="phone_number" class="input-label">Enter phone number *</label>
+                <input id="phone_number" type="tel" placeholder="Eg. +1 800 000000" class="input-base input-100-width">
+
+                <label for="message" class="input-label"> Message *</label>
+                <textarea id="message" placeholder="Write us a message"
+                    class="input-base input-100-width textarea-base"></textarea>
+                <div class="submit-wrap">
+                    <input type="submit" value="Submit message">
+                </div>
+            </form>
+            <div class="company-details">
+                <div class="picture-background">
+                </div>
+                <div class="company-details-row">
+
+                    <div class="row-icon">
+                        <span class="lnr lnr-map-marker"></span>
+                    </div>
+
+                    <div class="row-details">
+                        <span class="title">Address</span>
+                        <span class="subtitle">Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</span>
+                    </div>
+
+                </div>
+
+                <div class="company-details-row">
+
+                    <div class="row-icon">
+                        <span class="lnr lnr-phone-handset"></span>
+                    </div>
+
+                    <div class="row-details">
+                        <span class="title">
+                            Lets Talk
+                        </span>
+                        <span class="subtitle subtitle-green">+1 800 1236879</span>
+                    </div>
+
+                </div>
+
+                <div class="company-details-row">
+
+                    <div class="row-icon">
+                        <span class="lnr lnr-envelope"></span>
+                    </div>
+
+                    <div class="row-details">
+                        <span class="title">
+                            General Support
+                        </span>
+                        <span class="subtitle subtitle-green">contact@example.com</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
